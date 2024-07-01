@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Etch a sketch</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Etch a sketch</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="grid-control">
+          <div class="color-wrap">
+            <input type="color" id="color"/>
+            <label for="color">Color</label>
+          </div>
+          <div class="grid-buttons">
+            <button class="button toggle-btn" id="eraser">Erase</button>
+            <button class="button" id="clear">Clear</button>
+          </div>
+          <div class="range-wrap">
+            <label class="rangeValue" id="rangeValue">16 x 16</label>
+            <input type="range" id="rangeSlider" class="range-slider" value="16" min="16" max="50"/>
+          </div>
+        </div>
+        <div id="grid-container" class="grid-container"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
